@@ -1,35 +1,175 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dev</title>
-        <style>
-            body{
-                background: rgb(68, 68, 68);
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            header{
-                background: black;
-                padding: 50px 20px;
-            }
-            section{
-                background: white;
-                color: grey;
-                padding: 30px;
-            }
-            footer{
-                background: black;
-                padding: 10px 20px;
-            }   
-        </style>
-    </head>
+<html lang="en">
+  <head>
+    <script type="application/ld+json">
+      {
+        "name": "Carl Henric Prestor",
+        "alternateName": "CHGP",
+        "description": "Carl Henrics is a embedded developer",
+        "headline": "Carl Henrics is a embedded developer",
+        "url": "xxx",
+        "image": "https://secure.gravatar.com/avatar/f9c6903a50d1d861a47a614862b00b89.png?s=375",
+        },
+        "@type": "WebSite",
+      }
+    </script>
+    <title>CHGP</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/Inter%20(web)/Inter-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/Inter%20(web)/Inter-Regular.woff") format("woff");
+      }
 
-    <body>
-        <header>Head</header>
-        <section>TripleSection</section>
-        <section>lower</section>
-        <footer>footer</footer>
-    </body>
+      html {
+        box-sizing: border-box;
+        user-select: none;
+        scrollbar-color: dark;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        font: normal 20px/1.4 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        margin: 0 auto;
+        color: #fff;
+        background-color: hsl(240, 22%, 7%);
+        max-width: 800px;
+      }
+
+      a {
+        color: hsl(200, 50%, 45%);
+      }
+
+      a:hover,
+      a:focus {
+        color: hsl(200, 80%, 45%);
+      }
+
+      .main {
+        padding: 12px;
+        font-size: 24px;
+        line-height: 1.2;
+        display: flex;
+        min-height: calc(100% - 200px);
+        color: hsl(200, 7%, 80%);
+      }
+
+      .main > div {
+        margin: auto 0;
+      }
+
+      .main h1 {
+        font-size: 40px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .main h2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        color: hsl(200, 7%, 53%);
+      }
+
+      .main h1 a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .main h1 a:hover {
+        text-decoration: underline;
+      }
+
+      .stuff {
+        padding: 0 12px;
+        padding-bottom: 20px;
+      }
+
+      .stuff h3 {
+        color: #fff;
+        margin-top: -105px;
+        margin-bottom: 0;
+        font-weight: 400;
+      }
+
+      .stuff ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 16px;
+        color: hsl(200, 7%, 53%);
+      }
+
+      .stuff li {
+        margin-top: 8px;
+      }
+
+      .stuff a {
+        font-size: 20px;
+      }
+
+      .fade {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(to bottom, transparent, hsl(240, 22%, 7%));
+        pointer-events: none;
+      }
+
+      ::-webkit-scrollbar {
+        width: 14px;
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        width: 10px;
+        border-radius: 10px;
+        border: 4px solid rgba(0, 0, 0, 0);
+        background-color: hsl(200, 7%, 30%);
+        background-clip: padding-box;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: hsl(200, 80%, 45%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <h1>Carl Henric Prestor</h1>
+        <h2>CHGP</h2>
+        <br />
+        Embedded developer student,<br />Software developer, technical enthusiast.<br /><br />
+        Follow me on <a href="https://twitter.com/TheCHPCircus">Twitter</a>.<br />
+        Fork me on <a href="https://github.com/C-HGP">GitHub</a>.<br />
+        Chat with me on <a href="https://www.linkedin.com/in/carl-henric-prestor/">LinkedIn</a>.
+      </div>
+    </div>
+    <div class="stuff">
+      <h3>Projects</h3>
+      <ul>
+        <li><a href="https://github.com/C-HGP/Smart-Doorbell">Smart-Doorbell</a><br />Pi-based doorbell with livestream features</li>
+        <li><a href="https://steamdb.info/">Suicide Car</a><br />Short project for our robotic class, it attacks within x radius</li>
+        <li><a href="https://github.com/C-HGP/NeoWatch">Neowatch</a><br />Neopixel-based ringclock, created in my 1st year</li>
+        <li><a href="https://github.com/C-HGP/ProjectGAlarm-master">Arduino Alarm System</a><br />Alarmsystem created in 1st year as assignment</li>
+        <li><a href="https://github.com/C-HGP">ULP ESP32 Temperature sensor</a><br />Currently unfinished, it's a ULP tempsensor with smart features compatible with HASS, will be publicly available shortly</li>
+      </ul>
+    </div>
+  </body>
 </html>
