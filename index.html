@@ -3,10 +3,21 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="jquery-2.1.4.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="js/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ljn4kgu.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
     <title>CHGP</title>
     <link rel="shurtcut icon" type="image/png" href="images/favicon.png" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (t.innerHTML = "root: { --tmp-var: bold; }"), document.head.appendChild(t), (e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)"))), t.parentNode.removeChild(t), e;
+      };
+      supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
 
     <style>
       @font-face {
@@ -62,7 +73,7 @@
       }
 
       .main > div {
-        margin: 100px 0;
+        margin: auto 0;
       }
 
       .main h1 {
@@ -89,12 +100,12 @@
 
       .stuff {
         padding: 0 12px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
       }
 
       .stuff h3 {
         color: #fff;
-        margin-top: -100px;
+        margin-top: 30px;
         margin-bottom: 0;
         font-weight: 400;
       }
@@ -168,8 +179,8 @@
     </div>
     <div id="particles-js"></div>
 
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
