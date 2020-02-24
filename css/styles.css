@@ -38,6 +38,20 @@ body {
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
+.source {
+  color: hsl(200, 7%, 53%);
+  border-radius: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 10px;
+}
+
+#buttonsBottomL {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+}
 
 @keyframes loader {
   0% {
