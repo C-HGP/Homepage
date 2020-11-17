@@ -5,6 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="js/jquery-2.1.4.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/aboutme.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ljn4kgu.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <title>CHGP</title>
@@ -99,30 +100,15 @@
       }
 
       .stuff {
+        font-size: 18px;
         padding: 0 12px;
-        padding-bottom: 40px;
+        padding-bottom: 0px;
+        width: 100%;
       }
 
-      .stuff h3 {
-        color: #fff;
-        margin-top: 30px;
-        margin-bottom: 0;
-        font-weight: 400;
-      }
-
-      .stuff ul {
-        list-style-type: none;
-        padding: 0;
+      .stuff p {
         font-size: 16px;
-        color: hsl(200, 7%, 53%);
-      }
-
-      .stuff li {
-        margin-top: 8px;
-      }
-
-      .stuff a {
-        font-size: 20px;
+        width: 100%;
       }
 
       .fade {
@@ -156,37 +142,36 @@
   <body>
     <div class="main">
       <div>
-        <h1>
-          <a href="mailto:carlgprestor@gmail.com">Carl Henric Prestor</a>
-        </h1>
-        <h2>CHGP</h2>
-        <br />
-        Engineering student,<br />Software developer, technical enthusiast.<br /><br />
-        Follow me on <a href="https://twitter.com/TheCHPCircus">Twitter</a>.<br />
-        Fork me on <a href="https://github.com/C-HGP">GitHub</a>.<br />
-        Chat with me on <a href="https://www.linkedin.com/in/carl-henric-prestor/">LinkedIn</a>.
-      </div>
+        <div class="codinfox-sidebar-description sidebar-personal-info-section">
+                <div class="codinfox-changing-keywords" id="change">
+                    <strong>
+                        <b class="hidden">Hello</b><br/>
+                        <b class="hidden">Hola</b><br/>
+                        <b class="hidden">Bonjour</b><br/>
+                        <b class="hidden">Konnichiwa</b>
+                    </strong>
+                </div>
+            </div>
     </div>
     <div class="stuff">
-      <h3>Projects</h3>
-      <ul>
-        <li><a href="https://github.com/C-HGP/Smart-Doorbell">Smart-Doorbell</a><br />Pi-based doorbell with livestream features</li>
-        <li><a href="https://github.com/C-HGP/suicideCar-master">Suicide Car</a><br />Short project for our robotic class, it attacks within x radius</li>
-        <li><a href="https://github.com/C-HGP/NeoWatch">Neowatch</a><br />Neopixel-based ringclock, created in my 1st year</li>
-        <li><a href="https://github.com/C-HGP/ProjectGAlarm-master">Arduino Alarm System</a><br />Alarmsystem created in 1st year as assignment</li>
-        <li><a href="https://github.com/C-HGP/ULP-ESP32-Sensor">ULP ESP32 Temperature sensor</a><br />ULP-ESP32 Temperature sensor with smart features, used with HASS.</li>
-        <li><a href="https://docs.google.com/document/d/1Hlzmj9sGl8xCWO1fDsgVcTAkWw2YJ0-beOncXIGybrA/edit?usp=sharing">Communication Protocol Battery Consumption (Master Thesis)</a><br />This is my Master Thesis about battery consumption with different communication protocols. (Currently in Swedish) </li>
-      </ul>
-    </div>
-    <div id="particles-js"></div>
+    <h3>About me</h3>
+    <p>
+        Hello, my name is Carl Henric Prestor.
+        I'm a educated embedded and IoT engineer, and i'm currently studying to a get a master in computer sience.
+    </p>
+    <p>
+        Besided the development i'm highly interested in design, fashion, the automotive industry and architecture.
+        I have several years of skills in the Adobe suite and video editing. 
 
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+        <p>Do you need me for a contract in development or design?</p>
+        <p>Feel free to <a href="mailto:carlgprestor@gmail.com">contact me.</a></p>
+    </p>
+    </div>
 
     <div id="buttonsBottomL">
       <button class="source" onclick="window.location.href = 'https://github.com/C-HGP/Homepage';">source</button>
       <button class="source" onclick="window.location.href = 'snake.html';">snake</button>
-      <button class="source" onclick="window.location.href = 'aboutme.html';">about</button>
+      <button class="source" onclick="window.location.href = 'index.html';">home</button>
     </div>
 
     <div class="loader-wrapper">
