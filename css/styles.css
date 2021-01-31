@@ -53,11 +53,6 @@ body {
   left: 10px;
 }
 
-#buttonsBottomL {
-  position: fixed;
-  bottom: 0;
-  right: 10px;
-}
 
 @keyframes loader {
   0% {
