@@ -49,13 +49,13 @@ body {
 
 #buttonsBottomL {
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   left: 10px;
 }
 
 #buttonsBottomR {
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   right: 10px;
 }
 
@@ -94,6 +94,21 @@ body {
     height: 0%;
   }
 }
+
+#rotate {
+  display: none;
+}
+
+@media screen and (max-width: 300px) {
+  #rotate {
+      background-color: rgba(0,0,0,0.5);
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+}
 #particles-js {
   width: 100%;
   height: 100%;
@@ -102,3 +117,4 @@ body {
   top: 0;
   left: 0;
 }
+
