@@ -1,121 +1,23 @@
-body {
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body
+{
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #17182f;
-}
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: hsl(240, 22%, 7%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #fff;
-  animation: loader 2s infinite ease;
-}
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
-}
-.source {
-  color: hsl(200, 7%, 53%);
-  border-radius: 4px;
-  padding: 0;
-  border: none;
-  background: none;
-  font-size: 10px;
-}
-
-#buttonsBottomL {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-}
-
-#buttonsBottomR {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  25% {
-    height: 0%;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  100% {
-    height: 0%;
-  }
-}
-
-#rotate {
-  display: none;
-}
-
-@media screen and (max-width: 300px) {
-  #rotate {
-      background-color: rgba(0,0,0,0.5);
-      display: block;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      width: 100%;
-  }
-}
-#particles-js {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  left: 0;
+  
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 #menuToggle
@@ -124,7 +26,6 @@ body {
   position: relative;
   top: 50px;
   left: 50px;
-  
   
   z-index: 1;
   
@@ -176,7 +77,7 @@ body {
   margin-bottom: 5px;
   position: relative;
   
-  background: #ffffff;
+  background: #cdcdcd;
   border-radius: 3px;
   
   z-index: 1;
@@ -234,8 +135,8 @@ body {
 {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -500px;
-  padding: 45px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
   padding-top: 125px;
   
   background: #ededed;
@@ -262,4 +163,3 @@ body {
 {
   transform: none;
 }
-
